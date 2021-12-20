@@ -15,6 +15,10 @@ if(WIN32)
     list(APPEND LU_SCAN_LINK_LIBRARIES ws2_32)
 endif(WIN32)
 
+if(UNIX)
+    list(APPEND LU_SCAN_LINK_LIBRARIES pthread)
+endif(UNIX)
+
 add_executable(lu_scan ${LU_SCAN_SOURCE_FILES})
 
 target_include_directories(lu_scan PUBLIC ${LU_SCAN_INCLUDE_DIRECTORIES})

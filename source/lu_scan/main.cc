@@ -4,7 +4,7 @@
 
 #include <iostream>
 #include <string>
-#include <chrono>
+#include <cstring>
 
 #include "RakPeerInterface.h"
 #include "RakNetworkFactory.h"
